@@ -534,6 +534,194 @@ nav ul li a:hover {
   color: #aaa;
 }
 
+.location-section {
+  background-color: #f9f4fd;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.location-section h2 {
+  font-size: 2.5rem;
+  color: #9118A8;
+  margin-bottom: 1rem;
+}
+
+.location-section p {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 2rem;
+}
+
+.map-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  box-shadow: 0 8px 25px rgba(145, 24, 168, 0.1);
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.about-us {
+  padding: 4rem 2rem;
+  background-color: #f9f4fd;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+  gap: 2rem;
+}
+
+.about-image {
+  flex: 1 1 400px;
+  text-align: center;
+}
+
+.about-image img {
+  max-width: 100%;
+  border-radius: 1rem;
+  box-shadow: 0 8px 24px rgba(145, 24, 168, 0.2);
+}
+
+.about-text {
+  flex: 1 1 500px;
+  text-align: left;
+}
+
+.about-text h2 {
+  font-size: 2.5rem;
+  color: #9118A8;
+  margin-bottom: 1rem;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.about-text .btn-purple {
+  margin-top: 1rem;
+  display: inline-block;
+}
+
+.gallery-section {
+  padding: 4rem 2rem;
+  background-color: #fff;
+  text-align: center;
+}
+
+.gallery-header h2 {
+  font-size: 2.5rem;
+  color: #9118A8;
+  margin-bottom: 0.5rem;
+}
+
+.gallery-header p {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 2rem;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.gallery-grid img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 1rem;
+  box-shadow: 0 6px 20px rgba(145, 24, 168, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-grid img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 25px rgba(145, 24, 168, 0.25);
+}
+
+.addons-section {
+  padding: 40px 20px;
+  background: #fefefe;
+}
+
+.addons-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #111;
+}
+
+.addons-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.addon-item {
+  text-align: center;
+  width: 160px;
+}
+
+.addon-item img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  transition: transform 0.3s ease;
+}
+
+.addon-item img:hover {
+  transform: scale(1.05);
+}
+
+.addon-item h3 {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #222;
+}
+
+.addon-item p {
+  margin-top: 4px;
+  color: #555;
+  font-weight: 600;
+}
+
+/* Reviews Section */
+#reviews {
+  background-color: #f8f8f8;
+  padding: 60px 20px;
+  border-top: 5px solid #f0e1fa;
+}
+
+#reviews h2 {
+  font-size: 2.2rem;
+  text-align: center;
+  color: #9118A8;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+#reviews .elfsight-app-035fce8d-245f-4c64-a218-c5718e64b39c {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  overflow: hidden;
+  padding: 10px;
+  background: #fff;
+}
+
 
 
 
@@ -602,6 +790,16 @@ nav ul li a:hover {
 
   .feature-item p {
     font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #reviews {
+    padding: 40px 10px;
+  }
+
+  #reviews h2 {
+    font-size: 1.7rem;
   }
 }
 
