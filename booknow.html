@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Reels'n Rejoice - Private Theatre</title>
+  <link rel="shortcut icon" href="Logo.jpeg" type="image/png">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script2.js" defer></script>    
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<header>
+        <img src="Logo.jpeg" alt="Reels'n Rejoice" class="Logo">
+        <h1> Reels'n Rejoice- Private Theatre</h1>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="add-ons.html">Add-Ons</a></li>
+                <li><a href="booknow.html">Book Now</a></li>
+                
+                
+            </ul>
+        </nav>
+
+</header>
+
+<body>
+    <main>
+        <div class="booknow-header">
+    <h2>Book Now</h2>
+    <p>Let's Celebrate your special day</p>
+  </div>
+    <section id="booknow" class="booking-cards">
+      <div class="theatre-card">
+        <img src="Screen1.jpg" alt="Screen1" />
+        <h3>Screen 1<span class="slots">6 slots available</span></h3>
+        <p class="price">₹1599 for 6-8 people <span>(including taxes)</span></p>
+        <p class="info">🎥 120” 4K Screen • 🔊 1000W Dolby Atmos</p>
+        <p class="extra">₹400 per extra person • Decoration: ₹0</p>
+        <p><strong>Available Slots:</strong></p>
+        <div class="slot-buttons">
+          <button disabled>09:30 AM - 11:00 AM</button> 
+          <button disabled>11:30 AM - 1:00 PM</button>
+          <button disabled>1:00 PM - 3:00 PM</button>
+          <button disabled>3:30 PM - 5:30 PM</button>
+          <button disabled>6:00 PM - 8:00 PM</button>
+          <button disabled>8:30 PM - 10:30 PM</button>
+        </div>
+        <button class="proceed-btn" data-theatre="Paradise Theatre">Proceed</button>
+      </div>
+
+      <!-- Platinum Theatre -->
+      <div class="theatre-card">
+        <img src="Screen2.jpg" alt="Screen 2" />
+        <h3>Screen 2 <span class="slots">4 slots available</span></h3>
+        <p class="price">₹1299 for 6 people <span>(including taxes)</span></p>
+        <p class="info">🎥 150” 4K Screen • 🔊 1000W Dolby Atmos</p>
+        <p class="extra">₹400 per extra person • Decoration: ₹449</p>
+        <p><strong>Available Slots:</strong></p>
+        <div class="slot-buttons">
+          <button disabled>09:30 AM - 11:00 AM</button> 
+          <button disabled>11:30 AM - 1:00 PM</button>
+          <button disabled>1:00 PM - 3:00 PM</button>
+          <button disabled>3:30 PM - 5:30 PM</button>
+          <button disabled>6:00 PM - 8:00 PM</button>
+          <button disabled>8:30 PM - 10:30 PM</button>
+        </div>
+        <button class="proceed-btn" data-theatre="Screen 2">Proceed</button>
+      </div>
+    </section>
+
+    <!-- Modal -->
+    <div id="bookingModal" class="modal">
+      <div class="modal-content">
+        <span class="close" id="closeModal">&times;</span>
+        <h3>Fill Your Booking Details</h3>
+        <form id="bookingForm">
+          <input type="text" id="name" placeholder="Your Name" required />
+          <input type="tel" id="contact" placeholder="Contact Number" required />
+          <input type="date" id="date" required />
+          <input type="text" id="event" placeholder="Event Type" required />
+          <input type="number" id="members" placeholder="Number of Members" required />
+          <button type="submit" class="cta-button">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <a href="tel:+919703334005" class="call-button">📞 Book on Call</a>
+
+  </main>
+</body>
+
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-brand">
+      <img src="Logo.jpeg" alt="Reels'n Rejoice" class="footer-logo" />
+      <p>Reels’n Rejoice – Private Theatre Experience</p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="booknow.html">Book Now</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-contact">
+      <h4>Contact</h4>
+      <p>Email: <a href="mailto:info@reelsnrejoice.com">info@reelsnrejoice.com</a></p>
+      <p>WhatsApp: <a href="https://wa.me/919703334005">+91 9703334005</a></p>
+      <div class="footer-socials">
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Reels’n Rejoice. All Rights Reserved.</p>
+  </div>
+</footer>

@@ -1,12 +1,13 @@
+const phrases = [
+  "Birthday",
+  "Anniversary",
+  "Bride to be",
+  "Mom to be",
+  "Farewell"
+];
 
-  const phrases = [
-    "Birthday",
-    "Anniversary",
-    "Bride to be",
-    "Mom to be",
-    "Farewell"
-  ];
-
+document.addEventListener("DOMContentLoaded", () => {
+  // Typing effect
   const el = document.getElementById("typed-text");
   let currentPhrase = 0;
   let currentChar = 0;
@@ -36,16 +37,16 @@
     setTimeout(type, typingSpeed);
   }
 
-  document.addEventListener("DOMContentLoaded", () => {
-    type();
+  type();
 
-    // Hamburger toggle logic (correct one)
-    const hamburger = document.getElementById('hamburger');
-    const navList = document.querySelector('nav ul');
+  // Hamburger menu toggle
+  const hamburger = document.getElementById("hamburger");
+  const navMenu = document.querySelector("#nav-menu ul");
 
-    if (hamburger && navList) {
-      hamburger.addEventListener('click', () => {
-        navList.classList.toggle('active');
-      });
-    }
-  })
+  hamburger.addEventListener("click", () => {
+    navMenu.classList.toggle("active");
+  });
+
+ 
+});
+
