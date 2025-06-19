@@ -1,4 +1,5 @@
-const phrases = [
+
+  const phrases = [
     "Birthday",
     "Anniversary",
     "Bride to be",
@@ -37,4 +38,14 @@ const phrases = [
 
   document.addEventListener("DOMContentLoaded", () => {
     type();
-  });
+
+    // Hamburger toggle logic (correct one)
+    const hamburger = document.getElementById('hamburger');
+    const navList = document.querySelector('nav ul');
+
+    if (hamburger && navList) {
+      hamburger.addEventListener('click', () => {
+        navList.classList.toggle('active');
+      });
+    }
+  })
