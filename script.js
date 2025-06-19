@@ -38,15 +38,15 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   type();
-
-  // Hamburger menu toggle
-  const hamburger = document.getElementById("hamburger");
-  const navMenu = document.querySelector("#nav-menu ul");
-
-  hamburger.addEventListener("click", () => {
-    navMenu.classList.toggle("active");
-  });
-
  
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    const hamburger = document.getElementById("hamburger");
+    const navList = document.querySelector("nav ul");
+
+    hamburger.addEventListener("click", () => {
+      navList.classList.toggle("active");
+    });
+  });
 

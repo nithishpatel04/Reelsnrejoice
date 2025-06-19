@@ -1036,6 +1036,47 @@ nav ul li a:hover {
   background-color: #c9973c;
 }
 
+/* Responsive styles for Book Now section */
+@media (max-width: 900px) {
+  .booking-cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  .theatre-card {
+    max-width: 90%;
+  }
+}
+
+/* Smaller screens like mobiles */
+@media (max-width: 480px) {
+  .theatre-card {
+    padding: 1rem;
+  }
+
+  .slot-buttons button {
+    padding: 0.4rem 0.8rem;
+    font-size: 14px;
+  }
+
+  .proceed-btn {
+    padding: 0.6rem 1.2rem;
+    font-size: 14px;
+  }
+
+  /* Modal content narrower on mobile */
+  .modal-content {
+    width: 95%;
+    padding: 20px;
+  }
+
+  /* Book on Call button smaller and fixed bottom */
+  .call-button {
+    font-size: 16px;
+    padding: 10px 20px;
+  }
+}
 
 
 
