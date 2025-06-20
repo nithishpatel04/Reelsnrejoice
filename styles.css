@@ -21,6 +21,13 @@ body {
   flex-shrink: 0;
 }
 
+.header-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Main Title */
 header h1 {
   font-family: 'Poppins', sans-serif;
   font-size: 1.8rem;
@@ -29,24 +36,21 @@ header h1 {
   margin: 0;
   white-space: nowrap;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
-  flex-grow: 1;
 }
 
-.hamburger {
-  display: none;
-  font-size: 2rem;
-  background: none;
-  border: none;
-  color: white;
-  cursor: pointer;
-  flex-shrink: 0;
-  z-index: 1001;
-  position: relative;
+/* City Name */
+header h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #E0AE57; /* mustard gold for visibility */
+  margin: 0;
+  white-space: nowrap;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
 }
 
 nav {
-  flex-shrink: 0;
-  width: auto;
+  margin-left: auto;
 }
 
 nav ul {
@@ -68,6 +72,19 @@ nav ul li a {
 nav ul li a:hover {
   color: #E0AE57;
 }
+
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  flex-shrink: 0;
+  z-index: 1001;
+  position: relative;
+}
+
 
 /* MOBILE STYLES */
 @media (max-width: 768px) {
@@ -119,7 +136,7 @@ nav ul li a:hover {
     font-size: 1.1rem;
   }
 }
-
+/* === HERO SECTION STYLES === */
 .hero-section {
   position: relative;
   height: 60vh;
@@ -202,7 +219,6 @@ nav ul li a:hover {
   font-size: 1.2rem;
 }
 
-
 /* Call-to-action button */
 .cta-button {
   background-color: #E0AE57;
@@ -219,6 +235,67 @@ nav ul li a:hover {
 .cta-button:hover {
   background-color: #c7953a;
   color: white;
+}
+
+/* === MOBILE RESPONSIVE QUERIES === */
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+    height: auto;
+    padding: 3rem 1.5rem;
+    text-align: center;
+  }
+
+  .overlay {
+    max-width: 100%;
+    padding: 1rem 0;
+  }
+
+  .overlay h1 {
+    font-size: 2rem;
+    line-height: 1.4;
+  }
+
+  .overlay .highlight {
+    font-size: 2rem;
+  }
+
+  .overlay p {
+    font-size: 1rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .btn-purple,
+  .btn-instagram {
+    width: 100%;
+    max-width: 260px;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .overlay h1 {
+    font-size: 1.6rem;
+  }
+
+  .overlay .highlight {
+    font-size: 1.6rem;
+  }
+
+  .overlay p {
+    font-size: 0.95rem;
+  }
+
+  .btn-purple,
+  .btn-instagram {
+    font-size: 0.95rem;
+    padding: 0.7rem 1.2rem;
+  }
 }
 
 
@@ -1077,6 +1154,7 @@ nav ul li a:hover {
     padding: 10px 20px;
   }
 }
+
 
 
 

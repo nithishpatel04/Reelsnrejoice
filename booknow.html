@@ -13,12 +13,19 @@
 </head>
 
 <body>
-  <header>
-  <img src="Logo.jpeg" alt="Reels'n Rejoice" class="Logo" />
-  <h1>Reels'n Rejoice – Private Theatre</h1>
+   <header>
+  <img src="Logo.jpeg" alt="Reels'n Rejoice" class="Logo">
 
+  <!-- Stack h1 and h2 together -->
+  <div class="header-text">
+    <h1>Reels'n Rejoice – Private Theatre</h1>
+    <h2>Karimnagar</h2>
+  </div>
+
+  <!-- Hamburger for mobile -->
   <button class="hamburger" id="hamburger">&#9776;</button>
 
+  <!-- Navigation -->
   <nav id="nav-menu">
     <ul>
       <li><a href="index.html">Home</a></li>
@@ -73,21 +80,27 @@
       </div>
     </section>
 
-    <!-- Modal -->
-    <div id="bookingModal" class="modal">
-      <div class="modal-content">
-        <span class="close" id="closeModal">&times;</span>
-        <h3>Fill Your Booking Details</h3>
-        <form id="bookingForm">
-          <input type="text" id="name" placeholder="Your Name" required />
-          <input type="tel" id="contact" placeholder="Contact Number" required />
-          <input type="date" id="date" required />
-          <input type="text" id="event" placeholder="Event Type" required />
-          <input type="number" id="members" placeholder="Number of Members" required />
-          <button type="submit" class="cta-button">Submit</button>
-        </form>
-      </div>
-    </div>
+   <!-- Modal -->
+<div id="bookingModal" class="modal">
+  <div class="modal-content">
+    <span class="close" id="closeModal">&times;</span>
+    <h3>Fill Your Booking Details</h3>
+    <form id="bookingForm">
+      <!-- Web3Forms API Key -->
+      <input type="hidden" name="access_key" value="4493eab3-00b4-425e-8b3e-103fdf0b7c50" />
+
+      <input type="text" name="name" id="name" placeholder="Your Name" required />
+      <input type="tel" name="contact" id="contact" placeholder="Contact Number" required />
+      <input type="date" name="date" id="date" required />
+      <input type="text" name="event" id="event" placeholder="Event Type" required />
+      <input type="number" name="members" id="members" placeholder="Number of Members" required />
+      <input type="hidden" name="theatre" id="theatre" />
+
+      <button type="submit" class="cta-button">Submit</button>
+    </form>
+  </div>
+</div>
+
 
     <a href="tel:+919703334005" class="call-button">📞 Book on Call</a>
 
@@ -113,7 +126,7 @@
 
     <div class="footer-contact">
       <h4>Contact</h4>
-      <p>Email: <a href="mailto:info@reelsnrejoice.com">info@reelsnrejoice.com</a></p>
+      <p>Email: <a href="mailto:reelnrejoice@gmail.com">info@reelsnrejoice.com</a></p>
       <p>WhatsApp: <a href="https://wa.me/919703334005">+91 9703334005</a></p>
       <div class="footer-socials">
         <a href="https://www.instagram.com/reels_n_rejoice?igsh=MTg5YmVxa2c1NDE2aA=="><i class="fa-brands fa-instagram"></i></a>
