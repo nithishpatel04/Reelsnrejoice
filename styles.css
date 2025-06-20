@@ -1155,6 +1155,23 @@ nav ul li a:hover {
   }
 }
 
+.header-call {
+  display: inline-block;
+  margin-top: 0.5rem;
+  background-color: #E0AE57;
+  color: #9118A8;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-weight: 600;
+  max-width: 160px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.header-call:hover {
+  background-color: #ffce65;
+}
+
 
 
 
