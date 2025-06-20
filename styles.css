@@ -1156,22 +1156,38 @@ nav ul li a:hover {
 }
 
 .header-call {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   margin-top: 0.5rem;
   background-color: #E0AE57;
   color: #9118A8;
   padding: 6px 12px;
-  border-radius: 6px;
+  border-radius: 8px;
   font-weight: 600;
-  max-width: 160px;
   text-decoration: none;
-  transition: background 0.3s ease;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  max-width: 140px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
 }
+
 
 .header-call:hover {
   background-color: #ffce65;
 }
 
+@media (max-width: 768px) {
+  .header-text {
+    width: 100%;
+    align-items: flex-start; /* Align left */
+  }
+
+  .header-call {
+    font-size: 0.9rem;
+    padding: 6px 12px;
+  }
+}
 
 
 
